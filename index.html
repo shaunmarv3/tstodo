@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-sans mt-5">
+    <div class="bg-blue-900 mx-auto my-auto w-[500px] h-[680px] rounded-lg p-5 text-white shadow-2xl">
+        <h1 class="text-center text-3xl font-bold mb-5">MY TODO LIST</h1>
+
+        <input type="text" id="task" placeholder="Enter your task"
+            class="bg-blue-500 w-[300px] py-2 px-4 ml-[50px] mt-2 rounded-md  placeholder-white mb-5 text-white focus:outline-none focus:ring-2 focus:ring-blue-300">
+        <button onclick="go()"
+            class="bg-green-600 text-white w-[60px] h-[38px] rounded-md ml-2 hover:bg-yellow-500">Add</button>
+
+        <div class="inner mt-8 border border-white mx-auto w-[400px] h-[460px] rounded-md">
+            <h2 class="text-center text-xl font-semibold underline text-white pt-3">My Tasks</h2>
+            <ul id="list" class="mt-5 space-y-2 overflow-auto"></ul>
+        </div>
+
+        <p class="text-center font-semibold mt-2"><b>Completed:</b> <span id="completed">0</span> | <b>Incomplete:</b>
+            <span id="incomplete">0</span>
+        </p>
+
+        <script src="func.js"></script>
+    </div>
+</body>
+
+</html>
